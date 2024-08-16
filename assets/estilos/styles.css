@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-primaria:#1A4D2E;
+    --cor-secundaria: white;
+    --cor-terciaria: #4d976b;
+    --fonte-principal: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 17%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho_menu_links {
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-weight: 400px;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.cabecalho_menu_links:hover {
+    cursor: pointer;
+    color:  var(--cor-terciaria);
+}
+
+.apresentacao{
+    padding: 5% 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:  var(--fonte-principal);
+    gap: 82px;
+}
+
+.apresentacao_conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.apresentacao_titulo{
+    font-size: 2.25rem;
+    font-family:  var(--fonte-principal);
+}
+
+.apresentacao_links_subtitulo{
+    font-weight: 400px;
+}
+
+.apresentacao_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.apresentacao_links_link{
+    display: flex;
+    justify-content: center;
+    gap: px;
+    border: 2px solid var(--cor-secundaria);
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.93rem;
+    padding: 12px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao_links_link:hover {
+    cursor: pointer;
+    background-color: var(--cor-terciaria);
+}
+
+.apresentacao_img{
+    width: 40%;
+}
+.rodape{
+    font-family:  var(--fonte-principal);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400px;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5% 5%;
+    }
+
+    .apresentacao_conteudo{
+        width: 100%;
+    }
+}
